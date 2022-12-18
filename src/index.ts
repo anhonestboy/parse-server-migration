@@ -28,7 +28,7 @@ app.use(
 );
 
 app.use(`/server`, parseServer.app);
-console.log("ciao")
+
 const httpServer = http.createServer(app);
 httpServer.listen(config.PORT, async () => {
   if (config.USE_STREAMS) {
